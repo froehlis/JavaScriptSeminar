@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Javascript and the DOM - using jQuery and other
+	foundation libraries to construct and manipulate the UI</title>
+<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/css/theme.css">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+
+
+	<div id="header" class="theme-blue">
+
+		<div id="navigationHeader">
+			<ul id="navigation" class="container" style="display: none;">
+
+				<li><a href="#booksCreateManipulate">Books - create and
+						manipulate</a></li>
+				<li><a href="#twoMethods">Two methods - same result but
+						different time</a></li>
+			</ul>
+		</div>
+
+		<div class="container" id="innerHeader">
+			<h1 style="text-align: left; margin-top: 0px; padding-bottom: 30px;">JavaScript
+				and the Dom</h1>
+			<h2 style="text-align: right">- using jQuery and other
+				foundation libraries to construct and manipulate the UI</h2>
+
+
+
+		</div>
+	</div>
+
+	<div id="content">
+
+
+		<div class="area" id="formInsertion">
+			<div class="container">
+				<h2>Advantages</h2>
+
+				<div id="advantages">
+					<h4>This example page shows how jQuery help to</h4>
+					<ul type="none">
+						<li><input type="checkbox" class="advCheckbox" /> create
+							content,</li>
+						<li><input type="checkbox" class="advCheckbox" /> manipulate
+							it,</li>
+						<li><input type="checkbox" class="advCheckbox" /> change the
+							appearance of it and</li>
+						<li><input type="checkbox" class="advCheckbox" /> traversal
+							trough the DOM - Tree</li>
+					</ul>
+					<button class="theme-blue" id="checkButton">OK let´s see</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="area" id="booksCreateManipulate">
+			<div class="container">
+				<h2>Books - create and manipulate</h2>
+				<button class="theme-blue" id="showBooks">Show unsorted</button>
+				<button class="theme-blue" id="sortByPrice">Sort by price</button>
+				<button class="theme-blue" id="sortByAuthor">Sort by author</button>
+
+				<div id="books"></div>
+				<div style="clear: both;"></div>
+				<hr style="border-top: 0; border-left: 0; border-right: 0;">
+
+				<div id="watchlist">
+
+					<div class="dropbox">
+						<h2>
+							Watchlist <small> - add items here</small>
+						</h2>
+
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="area" id="twoMethods">
+		<div class="container">
+			<h2>
+				Performance check <small style="font-size: 70%"> - same
+					result but different time</small>
+			</h2>
+			<button class="theme-blue" id="createBooksNormal">Show
+				(normal)</button>
+			<button class="theme-blue" id="createBooksHTML">Show (fast)</button>
+			<button class="theme-blue" id="removeBooks">Remove books</button>
+
+			<div class="books"></div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+
+
+
+	<div class="area" id="theme">
+		<div class="container">
+			<label for="themeSelector">Please select theme</label> <br> <select
+				name="theme" size="3" id="themeSelector">
+				<option value="theme-blue" selected="selected">Blue</option>
+				<option value="theme-red">Red</option>
+				<option value="theme-green">Green</option>
+			</select>
+		</div>
+	</div>
+
+
+	<div class="footer theme-blue">
+		<div style="float: right; padding: 20px; padding-right: 30px;">@Sebastian
+			Fröhlich, 2014</div>
+		<div style="clear: both;"></div>
+	</div>
+</body>
+</html>
